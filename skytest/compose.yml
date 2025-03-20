@@ -6,6 +6,10 @@ services:
       - default-network
     ports:
       - "80:8000"
+    environment:
+      DJANGO_SUPERUSER_USERNAME: skytest
+      DJANGO_SUPERUSER_PASSWORD: skytest
+      DJANGO_SUPERUSER_EMAIL: sky@test.com
     depends_on:
       - db
 
