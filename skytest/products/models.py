@@ -12,6 +12,9 @@ class Category(Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name = "Категория"
+        verbose_name_plural = "Категории"
 
 class Product(Model):
     name = CharField("Название товара", max_length=255)
@@ -48,6 +51,10 @@ class Product(Model):
     def orders_current_month(self):
         return self.orders_sum_by_month()
 
+    class Meta:
+        verbose_name = "Товар"
+        verbose_name_plural = "Товары"
+
     def __str__(self):
         return self.name
 
@@ -56,6 +63,10 @@ class Order(Model):
     product = ForeignKey(Product, on_delete=CASCADE, verbose_name="Товар")
     order_date = DateField("Дата заказа", default=timezone.now)
     quantity = PositiveIntegerField("Количество", default=1)
+
+    class Meta:
+        verbose_name = "Заказ"
+        verbose_name_plural = "Заказы"
 
     def __str__(self):
         return f"Заказ для {self.product.name} от {self.order_date}"
