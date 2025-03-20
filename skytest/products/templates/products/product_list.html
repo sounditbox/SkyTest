@@ -16,6 +16,8 @@
                 <th>Категория</th>
                 <th>Статус активности</th>
                 <th>Цена</th>
+                <th>Заказы за прошлый месяц</th>
+                <th>Заказы за текущий месяц</th>
             </tr>
         </thead>
         <tbody>
@@ -26,6 +28,8 @@
                 <td>{{ product.category.name }}</td>
                 <td>{{ product.is_active|yesno:"Активен,Неактивен" }}</td>
                 <td>{{ product.price }}</td>
+                <td>{{ product.orders_last_month }}</td>
+                <td>{{ product.orders_current_month }}</td>
             </tr>
             {% endfor %}
         </tbody>

@@ -107,5 +107,23 @@
             "order_date": "2025-02-15",
             "quantity": 42
         }
+    },
+    {
+        "model": "products.order",
+        "pk": 5,
+        "fields": {
+            "product": 3,
+            "order_date": "2025-03-15",
+            "quantity": 100500
+        }
+    },
+    {
+        "model": "products.order",
+        "pk": 6,
+        "fields": {
+            "product": 5,
+            "order_date": "2025-03-15",
+            "quantity": 420
+        }
     }
 ]
