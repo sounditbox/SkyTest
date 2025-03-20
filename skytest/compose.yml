@@ -1,0 +1,12 @@
+services:
+  skytest:
+    build: .
+    command: gunicorn skytest.wsgi:application --bind 0.0.0.0:8000
+    networks:
+      - default-network
+    ports:
+      - "80:8000"
+
+networks:
+  default-network:
+    driver: bridge
