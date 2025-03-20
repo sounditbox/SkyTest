@@ -26,7 +26,7 @@ skytest/
 1. **Клонирование репозитория:**
 
    ```bash
-   git clone https://github.com/yourusername/skytest.git
+   git clone https://github.com/sounditbox/skytest.git
    cd skytest
    ```
 
@@ -57,7 +57,7 @@ skytest/
 Проект упакован в Docker. Для запуска используйте:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 Контейнер `web`:
@@ -72,9 +72,9 @@ docker-compose up --build
 
 ## Dockerfile и entrypoint
 
-Проект использует  entrypoint-скрипт (`entrypoint.sh`), который выполняет следующие действия при старте контейнера:
+Проект использует entrypoint-скрипт (`entrypoint.sh`), который выполняет следующие действия при старте контейнера:
 - Применение миграций
 - Сбор статики
 - Загрузка фикстур
-- Создание суперпользователя (если не существует)
+- Создание суперпользователя
 - Запуск Gunicorn
