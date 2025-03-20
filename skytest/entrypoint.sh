@@ -5,6 +5,8 @@ python manage.py migrate --noinput
 
 python manage.py collectstatic --noinput
 
+python manage.py loaddata dummy_data.json
+
 python manage.py shell <<EOF
 from django.contrib.auth import get_user_model
 import os
