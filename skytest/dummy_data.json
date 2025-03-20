@@ -1,0 +1,111 @@
+[
+
+    {
+        "model": "products.category",
+        "pk": 1,
+        "fields": {
+            "name": "Электроника"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 2,
+        "fields": {
+            "name": "cat2"
+        }
+    },
+    {
+        "model": "products.category",
+        "pk": 3,
+        "fields": {
+            "name": "cat3"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 1,
+        "fields": {
+            "name": "Смартфон",
+            "category": 1,
+            "is_active": true,
+            "price": "699.99"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 2,
+        "fields": {
+            "name": "Ноутбук",
+            "category": 1,
+            "is_active": true,
+            "price": "2999.99"
+        }
+    },
+
+    {
+        "model": "products.product",
+        "pk": 3,
+        "fields": {
+            "name": "prod3",
+            "category": 2,
+            "is_active": true,
+            "price": "3"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 4,
+        "fields": {
+            "name": "prod3",
+            "category": 2,
+            "is_active": true,
+            "price": "2"
+        }
+    },
+    {
+        "model": "products.product",
+        "pk": 5,
+        "fields": {
+            "name": "prod4",
+            "category": 3,
+            "is_active": true,
+            "price": "4"
+        }
+    },
+    {
+        "model": "products.order",
+        "pk": 1,
+        "fields": {
+            "product": 1,
+            "order_date": "2025-02-15",
+            "quantity": 1
+        }
+    },
+    {
+        "model": "products.order",
+        "pk": 2,
+        "fields": {
+            "product": 2,
+            "order_date": "2025-02-15",
+            "quantity": 1
+        }
+    },
+    {
+        "model": "products.order",
+        "pk": 3,
+        "fields": {
+            "product": 3,
+            "order_date": "2025-02-15",
+            "quantity": 3
+        }
+    },
+    {
+        "model": "products.order",
+        "pk": 4,
+        "fields": {
+            "product": 4,
+            "order_date": "2025-02-15",
+            "quantity": 42
+        }
+    }
+]
